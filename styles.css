@@ -1,0 +1,290 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  font-size: 16px;
+  color: #1B1A1A;
+}
+.primary-btn {
+  background-color: transparent;
+  height: 46px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.primary-btn:hover {
+  background-color: #1B1A1A;
+  color: #fff;
+}
+.primary-btn:active {
+  transform: scale(0.98);
+}
+.person {
+  display: flex;
+  align-items: center;
+}
+.person .photo {
+  width: 84px;
+  height: 84px;
+  background-size: cover;
+  margin-right: 30px;
+}
+.person .info h3 {
+  font-size: 17px;
+  line-height: 26px;
+}
+.person .info p {
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: -3px;
+}
+
+.person.stephen .photo {
+  background-image: url('./img/stephen.png');
+}
+.person.nolan .photo {
+  background-image: url('./img/nolan.png');
+}
+.person.ferris .photo {
+  background-image: url('./img/ferris.png');
+}
+.person.aria .photo {
+  background-image: url('./img/aria.png');
+}
+.person.niko .photo {
+  background-image: url('./img/niko.png');
+}
+
+/* header */
+header {
+  background-color: #fff;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  padding: 0 140px 0 152px;
+  align-items: center;
+}
+header menu {
+  display: flex;
+  list-style: none;
+}
+header menu li {
+  margin-right: 32px;
+}
+header menu li a {
+  color: inherit;
+  text-decoration: none;
+}
+header menu li a:hover {
+  color: #615959;
+}
+header .logo {
+  flex-grow: 1;
+}
+.get-template-btn {
+  background-color: #1B1A1A;
+  color: #fff;
+}
+.get-template-btn:hover {
+  background-color: #4e4949;
+}
+/* end header */
+
+/* hero */
+.hero {
+  display: flex;
+  min-height: calc(100vh - 90px);
+  max-height: fit-content;
+}
+.hero .left {
+  background-color: #ECE7E4;
+  padding: 137px 111px 128px 100px;
+}
+.hero .left, .hero .right {
+  width: 50%;
+}
+.hero .right {
+  background-image: url('./img/hero.png');
+  background-size: cover;
+}
+.hero .name {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #645C55;
+  margin-bottom: 20px;
+}
+.hero h1 {
+  font-size: 64px;
+  line-height: 70px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+.hero p {
+  line-height: 24px;
+  margin-bottom: 41px;
+}
+/* end hero */
+
+
+/* firm */
+.firm {
+  padding: 100px 0 128px;
+  display: flex;
+  justify-content: center;
+}
+.firm .content {
+  width: 493px;
+}
+.firm .content p {
+  margin-bottom: 10px;
+}
+.firm .content p.last {
+  margin-bottom: 18px;
+}
+.firm .title {
+  width: 267px;
+  font-size: 32px;
+}
+/* end firm */
+
+
+/* reeding house */
+.reeding-house {
+  height: 600px;
+  background-image: url('./img/bg-1.png');
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.reeding-house .text {
+  width: 285px;
+  margin-right: 75px;
+}
+.reeding-house .text h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #403E3B;
+  letter-spacing: 2px;
+}
+.reeding-house .text p {
+  font-size: 16px;
+  color: #645C55;
+}
+/* end reeding house */
+
+
+/* process */
+.process {
+  padding: 100px 178px 110px;
+}
+.process .name {
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.process h2 {
+  text-align: center;
+  margin: 13px;
+  margin-bottom: 47px;
+  font-size: 39px;
+}
+.process .items {
+  display: flex;
+  justify-content: center;
+}
+.process .item {
+  width: calc(100% / 3);
+  margin-left: 102px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.process .item:first-child {
+  margin-left: 0;
+}
+.process .item h4 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.process .item p {
+  text-align: center;
+  font-size: 15px;
+  color: #645C55;
+}
+/* end process */
+
+/* customers */
+.customers {
+  background-color: #403E3B;
+  color: #fff;
+  display: flex;
+}
+.customers .text, .customers .logos {
+  width: 50%;
+}
+.customers .text {
+  padding: 135px;
+}
+.customers .text .name {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.customers .text h3 {
+  font-size: 32px;
+  margin-bottom: 14px;
+}
+.customers .text p {
+  font-size: 15px;
+  line-height: 24px;
+}
+.customers .logos {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 88px;
+  align-items: center;
+}
+.customers .logo-box {
+  width: 50%;
+}
+/* end customers */
+
+/* team */
+.team {
+  display: flex;
+  padding: 96px 136px 128px;
+}
+.team > .info {
+  width: calc(100% / 3);
+  padding-right: 37px;
+}
+.team > .info h3 {
+  font-size: 15px;
+  line-height: 24px;
+  font-size: 32px;
+  font-weight: 400;
+}
+.team > .info p {
+  margin-top: 14px;
+  margin-bottom: 30px;
+  color: #645C55;
+}
+.team .people {
+  width: calc((100% / 3) * 2);
+  display: flex;
+  flex-wrap: wrap;
+}
+.team .people .person {
+  width: 50%;
+  margin: 28px 0;
+}
+/* end team */
